@@ -3,7 +3,7 @@ function cambiarColor() {
     titulo.classList.add('titulo');
     setTimeout(() => {       
         titulo.classList.remove('titulo');
-    }, 3000);
+    }, 1000);
     
      
 }
@@ -17,3 +17,13 @@ const boton = document.querySelector('button');
 boton.addEventListener('click', cambiarColor('titulo'));
 boton.addEventListener('mouseenter', cambiarColor);
 
+class Carro {
+    constructor(marca, modelo, color) {
+        this.marca = marca;
+        this.modelo = modelo;
+        this.color = color;
+    }
+}
+
+const carro = new Carro('Toyota', 'Corolla', 'Rojo');
+console.log(carro.color);
